@@ -72,6 +72,7 @@ fn init_ship(world: &mut World, sprite_sheet: Handle<SpriteSheet>) {
     };
     world
         .create_entity()
+        .with(Ship::new())
         .with(sprite_render.clone())
         .with(position)
         .build();
