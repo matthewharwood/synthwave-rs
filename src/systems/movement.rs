@@ -21,8 +21,8 @@ impl<'s> System<'s> for MovementSystem {
             
             let shoot = input.action_is_down("shoot").unwrap_or(false);
             
-            transform.move_up(horizontal);
-            transform.move_right(vertical);
+            transform.move_right(horizontal);
+            transform.move_up(vertical);
         }
     }
 }
